@@ -7,11 +7,10 @@ public class Arithmethic {  // class
 
         Scanner input = new Scanner(System.in);   // create a scanner to obtain input from the user
 
-        System.out.print("Enter first number : ");   // prompt user to input first number
+        System.out.print("Enter two numbers : ");   // prompt user to input first number
         int number1 = input.nextInt();  // read first number
-
-        System.out.print("Enter second number : ");   // prompt user to input second number
         int number2 = input.nextInt();  // read second number
+
 
         int square1 = number1 * number1;   // calculate square of the first number
         int square2 = number2 * number2;   // calculate square of the second number
