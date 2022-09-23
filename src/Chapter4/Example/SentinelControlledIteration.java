@@ -1,4 +1,5 @@
 package Chapter4;
+// Sentinel Controlled iteration
 
 import java.util.Scanner;
 
@@ -9,14 +10,14 @@ public class SentinelControlledIteration {
         int total = 0;
         int counter = 0;
 
-        System.out.print ( "Enter the first grade or - 1 to quit:" );
+        System.out.print ( "Enter the grade or - 1 to quit:" );
         int grade = input.nextInt ( );
 
         while (grade != -1) {
             total = total + grade;
             counter = counter +1;
 
-            System.out.print ( "Enter second grade or - 1 to quit :" );
+            System.out.print ( "Enter grade or - 1 to quit :" );
              grade = input.nextInt ( );
         }
         if ( counter != 0 ){
