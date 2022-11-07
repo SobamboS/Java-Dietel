@@ -5,5 +5,6 @@ public class ClockTest {
 
         Clock clock = new Clock ( 25, 67, 65);
         System.out.println (  clock.getDisplayTime () );
+
     }
 }

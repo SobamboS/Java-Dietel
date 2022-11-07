@@ -1,4 +1,4 @@
-package Chapter6;
+package Chapter6.Example;
 
 import java.security.SecureRandom;
 

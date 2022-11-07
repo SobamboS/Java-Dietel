@@ -8,9 +8,9 @@ public class Clock {
     public Clock ( int hour, int second, int minute ) {
         if(hour > 23) hour = 0; this.hour = hour;
 
-        if( second > 59 ) second = 0; this.second = second;
+        if(second > 59 ) second = 0; this.second = second;
 
-        if( minute > 59 ) minute = 0;  this.minute = minute;
+        if(minute > 59 ) minute = 0;  this.minute = minute;
     }
 
     public int getHour ( ) {

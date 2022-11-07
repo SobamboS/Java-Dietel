@@ -18,7 +18,7 @@ public class While_ClassAverage {
            gradeCounter = gradeCounter + 1;
        }
     int average = total / 10;
-        System.out.printf("%nTotal of all 3 grades is %d%n", total);
+        System.out.printf("%nTotal of all grades is %d%n", total);
             System.out.printf("Average is :%d", average);
     }
 }

@@ -2,7 +2,7 @@ package Chapter3.Car;
 
 public class Car {
     private String model;
-    private   String year;
+    private String year;
     private double price;
 
 
@@ -16,9 +16,6 @@ public Car ( String model, String year, double price) {
 
     }
 
-    public String getModel ( ) {
-        return model;
-    }
 
     public void setModel ( String model ) {
         this.model = model;
@@ -41,6 +38,9 @@ public Car ( String model, String year, double price) {
         this.year = year;
     }
 
+    public String getModel () {
+        return model;
+    }
     public double getFinalPrice (double discount){
         return price - (price * discount) / 100;
     }
