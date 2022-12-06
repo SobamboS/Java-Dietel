@@ -5,7 +5,7 @@ package Chapter4;
 //        a total of $650. You’ve been supplied with a list of the items sold by each salesperson. The values of
 //        these items are shown in Fig. 4.33. Develop a Java application that inputs one salesperson’s items
 //        sold for last week and calculates and displays that salesperson’s earnings. There’s no limit to
-//        the number of items that can be sold.
+//        the number of items that can be sold.
 
 import java.util.Scanner;
 
@@ -14,20 +14,22 @@ public class SalesCommissionCalculator {
         Scanner input = new Scanner ( System.in );
 
         int total = 0;
-        int earning = 200;
-        int counter = 1;
-        System.out.print("Input price of item " );
-        double item = input.nextDouble ();
+        int count = 0;
+        double item = 0.0;
+
 
         while( item != -1){
             total += item;
-        System.out.print ( "Input price34" +
-                " of item " );
+            count++;
+        System.out.print ("Input price of item " );
         item = input.nextDouble ();
+
+           // System.out.println("Item"+ count);
         }
 
-        double grossEarning = earning * (double) ((total * 9) / 100);
-             System.out.printf ( "Your gross earning is $%.1f", grossEarning );
-        System.out.println(item);
+
+        double grossEarning = 200 * (double) ((total * 9) / 100);
+           System.out.printf ( "Your gross earning is $%.1f", grossEarning );
+
     }
 }
