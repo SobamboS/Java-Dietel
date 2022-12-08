@@ -20,16 +20,18 @@ public class SalesCommissionCalculator {
 
         while( item != -1){
             total += item;
-            count++;
         System.out.print ("Input price of item " );
         item = input.nextDouble ();
 
-           // System.out.println("Item"+ count);
         }
+            count++;
+
 
 
         double grossEarning = 200 * (double) ((total * 9) / 100);
-           System.out.printf ( "Your gross earning is $%.1f", grossEarning );
+           System.out.printf ( "Your gross earning is $%.1f%n", grossEarning );
 
+            System.out.print("Item    Value");
+            System.out.printf("%d%n      %f%n",count , item);
     }
 }
