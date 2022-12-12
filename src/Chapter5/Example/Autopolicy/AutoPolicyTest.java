@@ -1,6 +1,6 @@
-package Chapter5;
+package Chapter5.Example.Autopolicy;
 
-import Chapter5.Example.AutoPolicy;
+import Chapter5.Example.Autopolicy.AutoPolicy;
 
 public class AutoPolicyTest{
     public static void main(String[] args){

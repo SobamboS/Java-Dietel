@@ -1,4 +1,4 @@
-package Chapter5.Example;
+package Chapter5.Example.Autopolicy;
 
 public class AutoPolicy{
     int accountNumber;
