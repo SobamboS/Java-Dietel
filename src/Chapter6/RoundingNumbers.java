@@ -9,12 +9,15 @@ public class RoundingNumbers{
         System.out.println("Enter a double value :");
         double value = input.nextDouble();
 
-        double y = Math.floor((value) +0.5);
+        double y = Math.floor(roundingValue(value) + 0.5);
 
 
-        System.out.println(value);
-        System.out.println(y);
+        System.out.println("Entered value " +value);
+        System.out.println("Floored value" +y);
 
+    }
+    public static double roundingValue(double value){
+        return value;
     }
 
 
