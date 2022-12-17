@@ -16,6 +16,7 @@ public static void main(String[] args) {
 
              System.out.print("Enter deposit amount for account1: "); // prompt
              double depositAmount = input.nextDouble ( );
+
              System.out.printf("%f%n adding to account1 balance%n%n",depositAmount);
              Eaccount1.deposit(depositAmount);
 
