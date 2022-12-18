@@ -1,25 +1,30 @@
 package Chapter6;
 
+import java.util.Scanner;
+
 public class ParkingCharges{
+    static int hour = 0;
+    static int charges= 2;
 
     public static void main(String[] args){
 
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Enter hours stayed : ");
+        hour =input.nextInt();
 
         System.out.println(calculateCharges());
     }
 
-    public static int usedHours(int hour){
-        return hour;
-    }
 
-    public static int amountCharged(int charges){
-        return 2;
-    }
 
     public static int calculateCharges(){
-
-        return usedHours(24);
+        if(hour > 3){
+            charges+= 0.50;
+        }else if(hour > 24){
+            charges = 10;
+        }
+        return charges;
     }
 
 
