@@ -4,19 +4,19 @@ import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class Computer_Assisted_Instruction{
-       static Scanner input = new Scanner(System.in);
+
+        static Scanner input = new Scanner(System.in);
         static SecureRandom random=new SecureRandom();
+        public static int generateSecureRandom(){
+        return random.nextInt(1, 5);
+          }
 
-//    public static int generateSecureRandom(){
-//        return random.nextInt(1, 5);
-//    }
-
-    public  static  int multiply(int number1, int number2 ){
+        public  static  int multiply(int number1, int number2 ){
         return number1 * number2;
-    }
+           }
 
-    public static boolean checkAnswer(int answer, int actualAnswer) {
-        if (answer == actualAnswer) {
+           public static boolean checkAnswer(int answer, int actualAnswer) {
+          if (answer == actualAnswer) {
             System.out.println("Very Good! Correct");
             return true;
 
@@ -36,14 +36,14 @@ public class Computer_Assisted_Instruction{
  boolean isCorrect;
 
  do {
-     int num1 = random.nextInt(1,5);
-     int num2 = random.nextInt(1,5);
+     int num1 = generateSecureRandom();
+     int num2 = generateSecureRandom();
      int actualAnswer = question(num1 , num2);
 
      System.out.println(" Your answer:  ");
      int answer = input.nextInt();
 
-     isCorrect = checkAnswer(num1,num2);
+     isCorrect = checkAnswer(answer, actualAnswer);
 
 
      while (!isCorrect) {
@@ -53,11 +53,11 @@ public class Computer_Assisted_Instruction{
          answer = input.nextInt();
 
          isCorrect = checkAnswer(answer, actualAnswer);
-         break;
 
  }
 
-    }while (true);
+    }
+ while (true);
 
  }
 
