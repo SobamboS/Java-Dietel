@@ -1,22 +1,27 @@
 package Chapter6;
 
 public class ParkingCharges{
-    static int hour;
-    static int charges=2;
+
     public static void main(String[] args){
-ParkingCharges charges1 = new ParkingCharges();
 
-        System.out.println();
+
+
+        System.out.println(calculateCharges());
+    }
+
+    public static int usedHours(int hour){
+        return hour;
+    }
+
+    public static int amountCharged(int charges){
+        return 2;
+    }
+
+    public static int calculateCharges(){
+
+        return usedHours(24);
     }
 
 
-    public void calculateCharges(){
-        if(hour++ > 3){
-            charges+=0.50;
-        }else if(hour>=24) {
-            charges=10;
-        }
 
-
-    }
 }
