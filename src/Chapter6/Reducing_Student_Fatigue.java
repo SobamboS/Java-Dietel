@@ -7,13 +7,6 @@ public class Reducing_Student_Fatigue{
 
         static Scanner input = new Scanner(System.in);
         static SecureRandom random=new SecureRandom();
-        public static int generateSecureRandom(){
-            return random.nextInt(1, 5);
-        }
-
-        public  static  int multiply(int number1, int number2 ){
-            return number1 * number2;
-        }
 
         public static boolean checkAnswer(int answer, int actualAnswer) {
             if (answer == actualAnswer) {
@@ -40,7 +33,7 @@ public class Reducing_Student_Fatigue{
 
         public static int question(int number1, int number2){
             System.out.printf("What is %d times %d", number1, number2);
-            return multiply(number1, number2);
+            return number1 * number2;
         }
 
         public static void main(String[] args){
@@ -48,8 +41,8 @@ public class Reducing_Student_Fatigue{
             boolean isCorrect;
 
             do {
-                int num1 = generateSecureRandom();
-                int num2 = generateSecureRandom();
+                int num1 = 1 + random.nextInt(5);
+                int num2 = 1 + random.nextInt(5);
                 int actualAnswer = question(num1 , num2);
 
                 System.out.println(" Your answer:  ");
