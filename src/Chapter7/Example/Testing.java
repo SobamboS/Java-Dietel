@@ -1,4 +1,4 @@
-package Chapter7;
+package Chapter7.Example;
 
 public class Testing{
     public static void main(String[] args){

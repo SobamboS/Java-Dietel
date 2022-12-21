@@ -1,4 +1,4 @@
-package Chapter7;
+package Chapter7.Example;
 
 public class InitArray {
     public static void main ( String[] args ) {

@@ -1,4 +1,4 @@
-package Chapter7.Example.ClassCard;
+package Chapter7.Example;
 
 public class Card {
     private final String face;
