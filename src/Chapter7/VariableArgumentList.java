@@ -5,7 +5,7 @@ package Chapter7;
 //   with several calls, each with a different number of arguments.
 
 public class VariableArgumentList{
-   private static int[] var = {10, 23,4,5,76,89};
+   private static final int[] var = {10, 23,4,5,76,89};
 
     private static double getAverage( ){
         int total =0;
